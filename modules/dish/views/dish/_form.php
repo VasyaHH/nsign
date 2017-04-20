@@ -13,7 +13,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($dishes_model, 'name')->textInput(['maxlength' => true]) ?>
 	
-	 <?php $ingredients_model->name = $selected_items;// print_r($selected_items); ?>
+	 <?php if (isset($selected_items)) $ingredients_model->name = $selected_items; ?>
 	
 	<?= $form->field($ingredients_model, 'name')->checkboxList($all_items)->label('Список ингредиентов:');  ?>
 

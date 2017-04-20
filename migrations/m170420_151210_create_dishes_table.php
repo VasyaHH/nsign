@@ -16,6 +16,17 @@ class m170420_151210_create_dishes_table extends Migration
             'id' => $this->primaryKey(),
 			'name'=>$this->string(50)->notNull(),
         ]);
+		
+		$this->execute("
+		INSERT INTO `dishes` (`id`, `name`) VALUES
+			(1, 'Жареная картошка'),
+			(2, 'Суп солянка'),
+			(3, 'Суп вермишелевый'),
+			(4, 'Зелёные щи с крапивой'),
+			(5, 'Винегрет '),
+			(6, 'Лазанья'),
+			(7, 'Жаркое в горшочках');
+		");
     }
 
     /**
