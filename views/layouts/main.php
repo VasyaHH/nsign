@@ -36,8 +36,11 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'User area', 'url' => ['/dish/user']],
-            ['label' => 'Admin area', 'url' => ['/dish/admin']],
+            ['label' => 'Home', 'url' => ['/']],
+            ['label' => 'Admin area', 'items' => [
+                ['label' => 'Edit Dishes', 'url' => '/dish/dish/'],
+                ['label' => 'Edit Ingredients', 'url' => '/dish/ingredient/'],
+            ]],
         ],
     ]);
     NavBar::end();
