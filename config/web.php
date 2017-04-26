@@ -8,6 +8,14 @@ $config = [
 	'defaultRoute' => 'dish/user',
     'bootstrap' => ['log'],
     'components' => [
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'enableStrictParsing' => false,
+            'rules' => [
+                // ...
+            ],
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'YGXLJE--TLp6DVizIb11aIYv_GOlDwE9',

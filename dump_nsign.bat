@@ -1,0 +1,1 @@
+mysqldump.exe nsign -u root > nsign.sql
