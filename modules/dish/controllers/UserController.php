@@ -53,6 +53,8 @@ use app\modules\dish\models\DishIngredients;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\widgets\ActiveForm;
+use yii\web\Response;
 
 /**
  * DishController implements the CRUD actions for Dishes model.
@@ -65,22 +67,21 @@ class UserController extends Controller
      */
     public function actionIndex()
     {	
-		$ingredients_model = new Ingredients();
-		$all_ingredients = Ingredients::find()
-			->select(['name'])
-			->where("isHidden=0")
-			->indexBy('id')
-			->column();
-			
-		if ($ingredients_model->load(Yii::$app->request->post())) {
-			
-			if (count($ingredients_model->name) < 2){
-				return $this->render('index', [
-					'message'=> 'Выберите больше ингредиентов',
-					'all_ingredients' => $all_ingredients,
-					'ingredients_model' => $ingredients_model,
-				]);
-			}
+
+
+        $ingredients_model = new Ingredients();
+        $all_ingredients = Ingredients::find()
+                ->select(['name'])
+                ->where("isHidden=0")
+                ->orderBy('name')
+                ->indexBy('id')
+                ->column();
+
+        if (Yii::$app->request->isAjax && $ingredients_model->load(Yii::$app->request->post())) {
+            Yii::$app->response->format = Response::FORMAT_JSON;
+            return ActiveForm::validate($ingredients_model);
+        }
+        if ( $ingredients_model->load(Yii::$app->request->post())&& $ingredients_model->validate() ) {
 			
 			$query = 
 			
@@ -107,12 +108,7 @@ class UserController extends Controller
 			
 
 			$result = DishIngredients::findBySql($query)->asArray()->all();
-			
-			// echo '<pre>';
-			// print_r($result);
-			// echo '</pre>';
-			// exit();
-			
+						
 			if (count($result) == 0){
 				return $this->render('index', [
 					'message'=> 'Ничего не найдено',
@@ -140,12 +136,6 @@ class UserController extends Controller
 					'all_ingredients' => $all_ingredients,
 					'ingredients_model' => $ingredients_model,
 				]);
-			
-			
-			// print_r($ingredients_model->name);
-			
-			
-            // return $this->redirect(['view', 'id' => $dishes_model->id]);
         } else {
             return $this->render('index',[
 			'all_ingredients' => $all_ingredients,

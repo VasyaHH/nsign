@@ -4,7 +4,7 @@
 ?>
 
 <div>
-    <h1>USER AREA</h1>
+    <h1>Укажите ингредиенты:</h1>
 	<?= $this->render('_form',[
 			'all_ingredients' => $all_ingredients,
 			'ingredients_model' => $ingredients_model,

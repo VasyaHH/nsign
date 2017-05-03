@@ -27,10 +27,17 @@ class Ingredients extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name'], 'required'],
-            [['name'], 'string', 'max' => 50],
+            [['name'], 'required', 'message'=>'Выберите более 1 ингредиента'],
+//            [['name'], 'string', 'max' => 50,'message'=>'sdfsdfsdfs'],
             [['isHidden'], 'number'],
+            ['name', 'gt2'],
         ];
+    }
+    
+    public function gt2($attribute){
+        if (count($this->$attribute) < 2){
+            $this->addError($attribute, 'Необходимо выбрать как минимум 2 ингредиента');
+        }
     }
 
     /**
