@@ -1,0 +1,375 @@
+[02-May-2017 09:22:51 UTC] WWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+[02-May-2017 09:26:03 UTC] WWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+[02-May-2017 09:30:53 UTC] qqqqqqqqqqq
+[02-May-2017 09:31:09 UTC] qqqqqqqqqqq
+[02-May-2017 09:31:19 UTC] qqqqqqqqqqq
+[02-May-2017 10:00:13 UTC] app\modules\dish\models\Ingredients Object
+(
+    [_attributes:yii\db\BaseActiveRecord:private] => Array
+        (
+            [name] => Array
+                (
+                    [0] => 16
+                    [1] => 11
+                )
+
+        )
+
+    [_oldAttributes:yii\db\BaseActiveRecord:private] => 
+    [_related:yii\db\BaseActiveRecord:private] => Array
+        (
+        )
+
+    [_errors:yii\base\Model:private] => 
+    [_validators:yii\base\Model:private] => ArrayObject Object
+        (
+            [storage:ArrayObject:private] => Array
+                (
+                    [0] => yii\validators\RequiredValidator Object
+                        (
+                            [skipOnEmpty] => 
+                            [requiredValue] => 
+                            [strict] => 
+                            [message] => Выберите больше двух ингредиентов
+                            [attributes] => Array
+                                (
+                                    [0] => name
+                                )
+
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [1] => yii\validators\StringValidator Object
+                        (
+                            [length] => 
+                            [max] => 50
+                            [min] => 
+                            [message] => {attribute} must be a string.
+                            [tooShort] => 
+                            [tooLong] => {attribute} should contain at most {max, number} {max, plural, one{character} other{characters}}.
+                            [notEqual] => 
+                            [encoding] => UTF-8
+                            [attributes] => Array
+                                (
+                                    [0] => name
+                                )
+
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [skipOnEmpty] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [2] => yii\validators\NumberValidator Object
+                        (
+                            [integerOnly] => 
+                            [max] => 
+                            [min] => 
+                            [tooBig] => 
+                            [tooSmall] => 
+                            [integerPattern] => /^\s*[+-]?\d+\s*$/
+                            [numberPattern] => /^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/
+                            [attributes] => Array
+                                (
+                                    [0] => isHidden
+                                )
+
+                            [message] => {attribute} must be a number.
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [skipOnEmpty] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [3] => yii\validators\InlineValidator Object
+                        (
+                            [method] => gt21
+                            [params] => 
+                            [clientValidate] => 
+                            [attributes] => Array
+                                (
+                                    [0] => name
+                                )
+
+                            [message] => 
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [skipOnEmpty] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                )
+
+        )
+
+    [_scenario:yii\base\Model:private] => default
+    [_events:yii\base\Component:private] => Array
+        (
+        )
+
+    [_behaviors:yii\base\Component:private] => Array
+        (
+        )
+
+)
+
+[02-May-2017 10:08:17 UTC] ingredients_model
+[02-May-2017 10:09:53 UTC] app\modules\dish\models\Ingredients Object
+(
+    [_attributes:yii\db\BaseActiveRecord:private] => Array
+        (
+            [name] => Array
+                (
+                    [0] => 16
+                    [1] => 11
+                    [2] => 9
+                )
+
+        )
+
+    [_oldAttributes:yii\db\BaseActiveRecord:private] => 
+    [_related:yii\db\BaseActiveRecord:private] => Array
+        (
+        )
+
+    [_errors:yii\base\Model:private] => 
+    [_validators:yii\base\Model:private] => ArrayObject Object
+        (
+            [storage:ArrayObject:private] => Array
+                (
+                    [0] => yii\validators\RequiredValidator Object
+                        (
+                            [skipOnEmpty] => 
+                            [requiredValue] => 
+                            [strict] => 
+                            [message] => Выберите больше двух ингредиентов
+                            [attributes] => Array
+                                (
+                                    [0] => name
+                                )
+
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [1] => yii\validators\StringValidator Object
+                        (
+                            [length] => 
+                            [max] => 50
+                            [min] => 
+                            [message] => {attribute} must be a string.
+                            [tooShort] => 
+                            [tooLong] => {attribute} should contain at most {max, number} {max, plural, one{character} other{characters}}.
+                            [notEqual] => 
+                            [encoding] => UTF-8
+                            [attributes] => Array
+                                (
+                                    [0] => name
+                                )
+
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [skipOnEmpty] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [2] => yii\validators\NumberValidator Object
+                        (
+                            [integerOnly] => 
+                            [max] => 
+                            [min] => 
+                            [tooBig] => 
+                            [tooSmall] => 
+                            [integerPattern] => /^\s*[+-]?\d+\s*$/
+                            [numberPattern] => /^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/
+                            [attributes] => Array
+                                (
+                                    [0] => isHidden
+                                )
+
+                            [message] => {attribute} must be a number.
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [skipOnEmpty] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [3] => yii\validators\InlineValidator Object
+                        (
+                            [method] => gt21
+                            [params] => 
+                            [clientValidate] => 
+                            [attributes] => Array
+                                (
+                                    [0] => name
+                                )
+
+                            [message] => 
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [skipOnEmpty] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                )
+
+        )
+
+    [_scenario:yii\base\Model:private] => default
+    [_events:yii\base\Component:private] => Array
+        (
+        )
+
+    [_behaviors:yii\base\Component:private] => Array
+        (
+        )
+
+)
+
+[02-May-2017 10:18:54 UTC] eeeeeee
+[02-May-2017 10:19:29 UTC] name
+[02-May-2017 10:19:48 UTC] Array
+(
+    [0] => 16
+    [1] => 11
+    [2] => 9
+    [3] => 1
+    [4] => 19
+)
+
+[02-May-2017 10:20:22 UTC] PHP Fatal error:  Call to undefined function app\modules\dish\models\typeof() in C:\Users\localAdmin\Desktop\GitRepos\nsign\modules\dish\models\Ingredients.php on line 38
+[02-May-2017 10:20:31 UTC] PHP Fatal error:  Call to undefined function app\modules\dish\models\type_of() in C:\Users\localAdmin\Desktop\GitRepos\nsign\modules\dish\models\Ingredients.php on line 38
+[02-May-2017 10:20:41 UTC] PHP Fatal error:  Call to undefined function app\modules\dish\models\var_type() in C:\Users\localAdmin\Desktop\GitRepos\nsign\modules\dish\models\Ingredients.php on line 38
+[02-May-2017 10:20:52 UTC] PHP Fatal error:  Call to undefined function app\modules\dish\models\vartype() in C:\Users\localAdmin\Desktop\GitRepos\nsign\modules\dish\models\Ingredients.php on line 38
+[02-May-2017 10:21:18 UTC] PHP Fatal error:  Call to undefined function app\modules\dish\models\get_type() in C:\Users\localAdmin\Desktop\GitRepos\nsign\modules\dish\models\Ingredients.php on line 38
+[02-May-2017 10:22:41 UTC] array
+[02-May-2017 10:22:48 UTC] 5
+[02-May-2017 10:22:54 UTC] 2
+[02-May-2017 10:46:56 UTC] PHP Fatal error:  Class 'Yii\widgets\ActiveForm' not found in C:\Users\localAdmin\Desktop\GitRepos\nsign\modules\dish\controllers\UserController.php on line 82
+[02-May-2017 10:47:12 UTC] PHP Fatal error:  Class 'Yii\widget\ActiveForm' not found in C:\Users\localAdmin\Desktop\GitRepos\nsign\modules\dish\controllers\UserController.php on line 82
+[02-May-2017 10:47:13 UTC] PHP Fatal error:  Class 'Yii\widget\ActiveForm' not found in C:\Users\localAdmin\Desktop\GitRepos\nsign\modules\dish\controllers\UserController.php on line 82
+[02-May-2017 10:48:58 UTC] PHP Fatal error:  Class 'Yii\widget\ActiveForm' not found in C:\Users\localAdmin\Desktop\GitRepos\nsign\modules\dish\controllers\UserController.php on line 82
+[02-May-2017 10:49:31 UTC] PHP Fatal error:  Class 'Yii\widgets\ActiveForm' not found in C:\Users\localAdmin\Desktop\GitRepos\nsign\modules\dish\controllers\UserController.php on line 82
